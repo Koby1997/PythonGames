@@ -1,0 +1,2 @@
+So here we have an original version of the game (Which is coin.py) and an improved version (coinImproved.py    duh). The point of the first game is to get as many coins as you can in 7 seconds.
+In the improved game you need to get the coin before the timer runs out. When you collect a coin, your timer resets. You also get a little faster when you collect a coin. Becasue of this, the timer also decreases a little bit meaning you have less time to get a coin the faster you get. Last note! don't hit the edges, cuz then you die!
