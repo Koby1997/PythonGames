@@ -5,6 +5,8 @@ So this is a collection of simple games that I am making to learn Python. Yes so
 So to play these games you need to follow these steps:
 
 
+
+
 For a windows computer (for you who don't know, if you have a computer that doesn't have an apple on it, than this is you haha)
 
 1)	Go to www.python.org and click the "Downloads" tab and click on the name of the most recent version. *Do not select the Download button*
@@ -62,4 +64,31 @@ If you have a Mac (The one with the apple on it)
 
 
 
-Now that everything is istalled:
+Now that everything is istalled, to play the games you must do this:
+
+
+1)	At the top right of the github.com there is a green button that says, "Clone or download". Click it. do it. do it..... do it....... good. Then click "Download Zip".
+
+2)	This will download the files you see above to your downloads file (Trust me, I didn't put a virus there that turns your computer into a decepticon and makes you waffels every moreing)
+So go to your downloads file and unzip the folder(right click the folder) and put the files wherever you want. I might suggest to make a new folder on your desktop tab and call it like, "Wow Koby is so awesome", "Koby is the best", or "Koby's stupid games". Anything will do though. But yea, once you create that folder, unzip the files and put them in that folder
+
+3)	Now go to that folder and go into it. Basically keep going wherever untill you see th folder that says, "3)Coin_Collector". Click that and when you are inside there you should see a file that ends in .py
+
+4)	Now open your Command Prompt or Terminal again and type:
+	pgzrun
+	#push the space bar
+	#now drag the .py file to the Command Prompt
+	#now push enter
+
+5)	*Boom* now you just play the game :)
+
+6)	Becasue I suck right now and don't know how to reset the game(I actually do but it is so much work and I am lazy), when you die, to play again you need to close the game window, then go back to the Command Prompt or Terminal and simply do this:
+	#push the up arrow
+	#push enter
+
+
+
+
+Hope you guys have fun! I'll add more games soon! 
+
+
