@@ -83,7 +83,7 @@ So go to your downloads file and unzip the folder(right click the folder) and pu
 
 5)	*Boom* now you just play the game :)
 
-6)	Becasue I suck right now and don't know how to reset the game(I actually do but it is so much work and I am lazy), when you die, to play again you need to close the game window, then go back to the Command Prompt or Terminal and simply do this:
+6)	Because I suck right now and don't know how to reset the game(I actually do but it is so much work and I am lazy), when you die, to play again you need to close the game window, then go back to the Command Prompt or Terminal and simply do this:
 	#push the up arrow
 	#push enter
 
