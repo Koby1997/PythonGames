@@ -70,7 +70,7 @@ Now that everything is istalled, to play the games you must do this:
 
 1)	At the top right of the github.com there is a green button that says, "Clone or download". Click it. do it. do it..... do it....... good. Then click "Download Zip".
 
-2)	This will download the files you see above to your downloads file (Trust me, I didn't put a virus there that turns your computer into a decepticon and makes you waffels every moreing)
+2)	This will download the files you see above to your downloads file (Trust me, I didn't put a virus there that turns your computer into a decepticon and makes you waffels every morning)
 So go to your downloads file and unzip the folder(right click the folder) and put the files wherever you want. I might suggest to make a new folder on your desktop tab and call it like, "Wow Koby is so awesome", "Koby is the best", or "Koby's stupid games". Anything will do though. But yea, once you create that folder, unzip the files and put them in that folder
 
 3)	Now go to that folder and go into it. Basically keep going wherever untill you see th folder that says, "3)Coin_Collector". Click that and when you are inside there you should see a file that ends in .py
