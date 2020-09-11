@@ -13,8 +13,9 @@ CENTER = (CENTER_X, CENTER_Y)
 
 score = 0
 game_over = False
-speed = 5.0
-clock_time = 5
+speed = 12.0
+h_speed = speed / 4
+clock_time = 8
 color = "green"
 
 
@@ -29,6 +30,9 @@ fox.pos = 100, 100
 coin = Actor("coin")
 coin.pos = 200, 200
 
+hedgehog = Actor("hedgehog")
+hedgehog.pos = 900, 700
+
 
 
 def draw():
@@ -41,6 +45,7 @@ def draw():
         screen.fill(color)
         fox.draw()
         coin.draw()
+        hedgehog.draw()
         screen.draw.text("Score: " + str(score), color="black", fontsize=35, topleft=(10,10))
         screen.draw.text("Time to beat: " + str(round(clock_time,3)), color="black", fontsize=35, topleft=(250,10))
         screen.draw.text("Your time: " + "{}".format(round(seconds,1)), color="black", fontsize=35, topright=(700,10))
@@ -71,7 +76,7 @@ def change_color(): #sweeeeeeet cool colors
     elif x == 8:
         color = "purple"
     elif x == 9:
-        color = "gold"  #hard to see coin. so perfect, bonus points
+        color = "gold"  #hard to see coin, so perfect, bonus points
     elif x == 10:
         color = "grey"
     
@@ -87,23 +92,19 @@ def place_coin():
 
 def update():
 
-    global score
-    global speed
-    global color
-    global clock_time
-    global seconds
-    global clock_1
-    global game_over
-    global speedup_change
+    global score,speed,h_speed,color,clock_time,seconds,clock_1,game_over,speedup_change
 
     if game_over and keyboard.space:
         game_over = False
         fox.pos = 100, 100
         coin.pos = 200, 200
-        speed = 5
-        clock_time = 5
+        hedgehog.pos = 900, 700
+        speed = 2
+        h_speed = speed/4
+        clock_time = 8
         score = 0
         seconds = 0
+        color = "green"
 
 
 
@@ -112,12 +113,14 @@ def update():
 
     if seconds >= clock_time:   #if you are too slow, you are a loser
         game_over = True
+        #print("time")      #used for debugging
     
     seconds += clock_1.tick_busy_loop()/1000    #each tic is 1 millisecond now
 
 
 
-#Movement    
+#Movement for fox   
+
     if keyboard.up:
         fox.y = fox.y - speed
 
@@ -131,12 +134,37 @@ def update():
         fox.x = fox.x + speed
 
 
+#Movement for hedghog. It just goes towards the fox, but is slower
+    if (hedgehog.x < fox.x): #hedgehog is to the left of fox
+        hedgehog.x = hedgehog.x + h_speed
+
+    if (hedgehog.x > fox.x): #to the right of fox
+        hedgehog.x = hedgehog.x - h_speed
+
+    if (hedgehog.y < fox.y): #above fox(remember y counts from top of screen)
+        hedgehog.y = hedgehog.y + h_speed
+
+    if (hedgehog.y > fox.y): #below fox
+        hedgehog.y = hedgehog.y - h_speed
+
+
+
+
+
+
+
 
     if fox.x <= 0 or fox.x >= 1000:     #if the fox hits the edge of the box, game over
         game_over = True
+        #print("sides")     #used for debugging
 
     if fox.y <= 0 or fox.y >= 800:
         game_over = True
+        #print("top or bottom")
+
+    if fox.colliderect(hedgehog):
+        game_over = True
+        #print("hedgehog")
 
 
 
@@ -148,7 +176,9 @@ def update():
 
     if coin_collected:
         speed = speed + 0.1 #when the fox picks up a coin, he gets a little faster
+        h_speed = speed/4
         seconds = 0         #reset the time
+
 
 
         if color == "black" or color == "gold":    #harder to see coin or time, so extra points!!
