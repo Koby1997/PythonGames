@@ -1,4 +1,3 @@
-<pre>
 Whats up guys!
 
 So this is a collection of simple games that I am making to learn Python. Yes some are very stupid and cheesy, but I try to make them at least a little fun or challenging. Again, I am LEARNING so just remember that haha.
@@ -91,6 +90,3 @@ So go to your downloads file and unzip the folder(right click the folder) and pu
 
 
 Hope you guys have fun! I'll add more games soon! 
-
-
-</pre>
