@@ -1,3 +1,4 @@
+
 Whats up guys!
 
 So this is a collection of simple games that I am making to learn Python. Yes some are very stupid and cheesy, but I try to make them at least a little fun or challenging. Again, I am LEARNING so just remember that haha.
@@ -31,11 +32,7 @@ The next couple instrutions you need to type exaclty how I put it. Exactly (or j
 	#Push enter
 
 8)	Now everything should be installed. Skip down past the mac instrucitons
-
-
-
-
-
+___________________________________________________________
 
 If you have a Mac (The one with the apple on it)
 
@@ -57,12 +54,7 @@ If you have a Mac (The one with the apple on it)
 
 8)	pip3 install pgzero
 	#Push enter
-
-
-
-
-
-
+____________________________________
 
 Now that everything is istalled, to play the games you must do this:
 
@@ -87,6 +79,6 @@ So go to your downloads file and unzip the folder(right click the folder) and pu
 	#push enter
 
 
-
+___________________________
 
 Hope you guys have fun! I'll add more games soon! 
